@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    font-family: Helvetica, Arial, sans-serif;
     color: #333;
     box-sizing: border-box;
 }
@@ -11,10 +11,12 @@ body {
     background-image: url("../img/bg.jpg");
     background-position: center;
     background-size: cover;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 button {
-    background-color: #FDFDFD;
+    background-color: #E0E0E0; /* Cor mais suave */
     color: #102F5e;
     border: 2px solid #102F5e;
     padding: 0.3rem 0.6rem;
@@ -47,7 +49,7 @@ select {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* Todo header */
@@ -145,7 +147,7 @@ select {
 }
 
 .todo button {
-    margin-left: 0.4rem;
+    margin-left: 0.5rem; /* Aumentado para mais espaçamento */
 }
 
 .done {
@@ -154,8 +156,12 @@ select {
 
 .done h3 {
     text-decoration: line-through;
-    color: #fff;
+    color: #D1E8E2; /* Cor mais suave para o texto riscado */
     font-style: italic;
 }
 
-
+/* Adicionando transições aos itens da lista */
+.todo:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}

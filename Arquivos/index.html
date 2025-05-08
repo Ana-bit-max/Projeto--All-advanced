@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title><A></A>ll advanced</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Advanced</title>
     <!--CSS do projeto-->
     <link rel="stylesheet" href="css/style.css">
     <!--Font Awesome-->
@@ -23,12 +23,11 @@
             <form id="todo-form">
                 <p>Adicione a sua tarefa:</p>
                 <div class="form-control">
-                    <input type="text" id="todo-input" placeholder="O que você vao fazer">
+                    <input type="text" id="todo-input" placeholder="O que você vai fazer">
                     <button type="submit" id="add-todo"><i class="fa-solid fa-plus"></i></button>
-
                 </div>
             </form>
-            <form id="edit-form" class="ride"></form>
+            <form id="edit-form" class="ride">
                 <p>Edite a sua tarefa:</p>
                 <div class="form-control">
                     <input type="text" id="edit-input">
@@ -44,7 +43,7 @@
                         <button id="erase-button">
                             <i class="fa-solid fa-delete-left"></i>
                         </button>
-                  </form>
+                    </form>
                 </div>
                 <div id="filter">
                     <h4>Filtrar:</h4>
@@ -53,31 +52,36 @@
                         <option value="done">Concluídos</option>
                         <option value="todo">Não Concluídos</option>
                     </select>
-              </div>
-              <div id="todo-list">
+                </div>
+            </div>
+            <div id="todo-list">
                 <div class="todo done">
-                    <h3>Estou fazendo alguma coisa...</h3>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <h3>Estudar JavaScript...</h3>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+                  <h3>Estou fazendo alguma coisa...</h3>
+                  <button class="complete-todo">
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button class="delete-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              
+                <div class="todo">
+                  <h3>Estudar JavaScript...</h3>
+                  <button class="complete-todo">
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button class="delete-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
                 </div>
               </div>
+        
         </header>
     </div>
 </body>
